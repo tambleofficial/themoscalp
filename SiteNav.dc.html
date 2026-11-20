@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./slots.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<header style="position:fixed;top:0;left:0;right:0;z-index:60;height:68px;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:0 clamp(20px,4vw,56px);background:rgba(9,9,9,.84);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(243,241,236,.08);font-family:'Pretendard Variable',Pretendard,system-ui,sans-serif">
+  <a href="/" style="display:flex;align-items:center;gap:12px;text-decoration:none;color:#F3F1EC">
+    <img src="./logo.png" alt="THE MO SCALP" style="height:40px;width:auto;display:block">
+    <span style="display:flex;flex-direction:column;gap:3px;padding-left:12px;border-left:1px solid #292929">
+      <span style="font-size:15px;font-weight:800;letter-spacing:-.01em;line-height:1">THE MO SCALP</span>
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.14em;color:#AAA7A1;line-height:1">by SAYJI BEAUTY</span>
+    </span>
+  </a>
+  <sc-if value="{{ desktop }}" hint-placeholder-val="{{ true }}">
+    <nav style="display:flex;align-items:center;gap:clamp(16px,2vw,32px)">
+      <sc-for list="{{ items }}" as="it" hint-placeholder-count="5">
+        <a href="{{ it.href }}" style="display:flex;align-items:baseline;gap:6px;text-decoration:none;color:{{ it.color }};transition:color .25s" style-hover="color:#F3F1EC">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#F05A24">{{ it.no }}</span>
+          <span style="font-size:13px;font-weight:600;letter-spacing:.08em">{{ it.en }}</span>
+        </a>
+      </sc-for>
+      <a href="http://pf.kakao.com/_BPxoxln" target="_blank" rel="noopener" style="display:flex;align-items:center;height:36px;padding:0 16px;border:1px solid #F05A24;color:#F05A24;text-decoration:none;font-size:13px;font-weight:600;transition:background .25s,color .25s" style-hover="background:#F05A24;color:#090909">상담하기</a>
+    </nav>
+  </sc-if>
+  <sc-if value="{{ mobile }}" hint-placeholder-val="{{ false }}">
+    <button onClick="{{ toggle }}" style="appearance:none;background:none;border:1px solid #292929;color:#F3F1EC;height:40px;padding:0 14px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;cursor:pointer">{{ menuLabel }}</button>
+  </sc-if>
+</header>
+<sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+  <div style="position:fixed;inset:68px 0 0 0;z-index:59;background:#090909;padding:32px 20px 120px;display:flex;flex-direction:column;font-family:'Pretendard Variable',Pretendard,system-ui,sans-serif;overflow:auto">
+    <sc-for list="{{ items }}" as="it" hint-placeholder-count="5">
+      <a href="{{ it.href }}" style="display:grid;grid-template-columns:44px 1fr;align-items:baseline;padding:22px 0;border-bottom:1px solid #1B1B1B;text-decoration:none;color:#F3F1EC">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#F05A24">{{ it.no }}</span>
+        <span style="display:flex;flex-direction:column;gap:6px"><span style="font-size:34px;font-weight:800;letter-spacing:-.03em;line-height:1">{{ it.en }}</span><span style="font-size:13px;color:#AAA7A1">{{ it.kr }}</span></span>
+      </a>
+    </sc-for>
+  </div>
+</sc-if>
+<sc-if value="{{ desktop }}" hint-placeholder-val="{{ true }}">
+  <div style="position:fixed;right:24px;bottom:24px;z-index:55;display:flex;flex-direction:column;gap:6px;font-family:'IBM Plex Mono',monospace">
+    <sc-for list="{{ floats }}" as="f" hint-placeholder-count="3">
+      <a href="{{ f.href }}" target="_blank" rel="noopener" title="{{ f.title }}" style="width:60px;height:60px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;background:#111111;border:1px solid #292929;color:#F3F1EC;text-decoration:none;font-size:9px;letter-spacing:.12em;transition:border-color .25s,color .25s" style-hover="border-color:#F05A24;color:#F05A24">
+        <span style="width:6px;height:6px;background:#F05A24"></span>
+        <span>{{ f.label }}</span>
+      </a>
+    </sc-for>
+  </div>
+</sc-if>
+<sc-if value="{{ mobile }}" hint-placeholder-val="{{ false }}">
+  <div style="position:fixed;left:0;right:0;bottom:0;z-index:58;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(9,9,9,.94);border-top:1px solid #1B1B1B;font-family:'Pretendard Variable',Pretendard,system-ui,sans-serif">
+    <a href="http://pf.kakao.com/_BPxoxln" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;height:52px;background:#F05A24;color:#090909;text-decoration:none;font-size:16px;font-weight:700">카카오 상담하기</a>
+  </div>
+</sc-if>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;active&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;home&quot;,&quot;brand&quot;,&quot;smp&quot;,&quot;case&quot;,&quot;process&quot;,&quot;contact&quot;],&quot;default&quot;:&quot;home&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  state = { w: typeof window !== 'undefined' ? window.innerWidth : 1280, open: false };
+  componentDidMount() {
+    this.onR = () => this.setState({ w: window.innerWidth });
+    window.addEventListener('resize', this.onR);
+  }
+  componentWillUnmount() { window.removeEventListener('resize', this.onR); }
+  renderVals() {
+    const active = this.props.active ?? 'home';
+    const base = [
+      { key: 'brand', no: '01', en: 'BRAND', kr: '브랜드 / 대표원장', href: '/brand' },
+      { key: 'smp', no: '02', en: 'SMP', kr: '두피 디자인', href: '/smp' },
+      { key: 'case', no: '03', en: 'CASE', kr: '작업 사례', href: '/case' },
+      { key: 'process', no: '04', en: 'PROCESS', kr: '상담·작업 과정 / 후기', href: '/process' },
+      { key: 'contact', no: '05', en: 'CONTACT', kr: '상담 안내', href: '/contact' },
+      { key: 'education', no: '06', en: 'EDUCATION', kr: '1:1 수강', href: '/education' },
+    ];
+    const items = base.map(i => ({ ...i, color: i.key === active ? '#F3F1EC' : '#AAA7A1' }));
+    const mobile = this.state.w < 900;
+    return {
+      items, mobile, desktop: !mobile,
+      menuOpen: mobile && this.state.open,
+      menuLabel: this.state.open ? 'CLOSE' : 'MENU',
+      toggle: () => this.setState(s => ({ open: !s.open })),
+      floats: [
+        { label: 'KAKAO', title: '카카오톡 상담', href: 'http://pf.kakao.com/_BPxoxln' },
+        { label: 'PLACE', title: '네이버 플레이스', href: 'https://m.place.naver.com/place/2050630772' },
+        { label: 'INSTA', title: 'Instagram', href: 'https://www.instagram.com/themo_scalp' },
+      ],
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /SiteNav.dc.html
+Disallow: /SiteFooter.dc.html
+
+Sitemap: https://themoscalp.pages.dev/sitemap.xml

@@ -1,0 +1,90 @@
+/* THE MO SCALP 모바일 재구성 (PC 는 그대로, 760px 미만만)
+ * 선택자는 브라우저가 정리한 style 글자("font-size: 17px")와 data-mx 갈고리를 씀 */
+[data-mx=wimg], [data-mx=fqa] { display: none; }
+
+@media (max-width: 759.98px) {
+  /* 시안의 html,body{overflow-x:hidden} 때문에 body 가 따로 스크롤되면 창 스크롤 이벤트가 죽어 등장 효과·진행선이 멈춤 → 창이 스크롤되게 */
+  html { overflow-x: visible !important; }
+  body { overflow-x: hidden !important; }
+
+  /* ── 공통 여백 ── */
+  [style*="padding: clamp(96px, 11vw, 168px)"] { padding-top: 56px !important; padding-bottom: 56px !important; }
+  [style*="clamp(20px, 4vw, 56px) clamp(96px, 11vw, 168px)"] { padding-bottom: 56px !important; }
+  [style*="padding: clamp(80px, 9vw, 140px)"], [style*="padding: clamp(72px, 8vw, 120px)"] { padding-top: 48px !important; padding-bottom: 48px !important; }
+  [style*="clamp(20px, 4vw, 56px) clamp(80px, 9vw, 140px)"] { padding-bottom: 48px !important; }
+  [style*="padding: clamp(120px, 13vw, 180px) clamp(20px, 4vw, 56px) clamp(56px, 6vw, 96px)"] { padding-top: 104px !important; padding-bottom: 40px !important; }
+  [style*="margin-top: clamp(48px"], [style*="margin-top: clamp(56px"], [style*="margin: clamp(48px"], [style*="margin: clamp(56px"] { margin-top: 32px !important; }
+  [style*="margin-top: clamp(32px, 4vw"] { margin-top: 24px !important; }
+
+  /* ── 글자 크기 ── */
+  h1[style*="font-size: clamp(52px"] { font-size: 46px !important; }
+  h2[style*="font-size: clamp(32px"], h2[style*="font-size: clamp(34px"], h2[style*="font-size: clamp(36px"], h2[style*="font-size: clamp(40px"] { font-size: 28px !important; line-height: 1.28 !important; }
+  h2[style*="font-size: clamp(52px"], h2[style*="font-size: clamp(56px"] { font-size: 44px !important; }
+  h2[style*="font-size: clamp(44px"], h2[style*="font-size: clamp(48px"] { font-size: 38px !important; }
+  h2[style*="font-size: clamp(28px, 3vw"], h3[style*="font-size: clamp(28px, 3vw"] { font-size: 24px !important; }
+  p[style*="font-size: 17px"], p[style*="font-size: 16px"], p[style*="font-size: clamp(15px, 1.2vw, 17px)"] { font-size: 15px !important; line-height: 1.75 !important; }
+  p[style*="font-size: clamp(22px"], p[style*="font-size: clamp(24px"], p[style*="font-size: clamp(28px"], p[style*="font-size: clamp(30px"] { font-size: 20px !important; line-height: 1.45 !important; }
+  p[style*="font-size: clamp(20px"] { font-size: 17px !important; }
+  span[style*="font-size: clamp(56px, 7vw, 120px)"] { font-size: 40px !important; }
+  span[style*="font-size: clamp(48px, 6vw, 96px)"] { font-size: 38px !important; }
+  span[style*="font-size: clamp(96px, 12vw, 200px)"] { font-size: 64px !important; }
+  span[style*="font-size: clamp(56px, 5.6vw, 92px)"] { font-size: 40px !important; }
+  span[style*="font-size: clamp(36px, 3.6vw, 56px)"] { font-size: 28px !important; }
+  span[style*="font-size: clamp(32px, 3.4vw, 52px)"], span[style*="font-size: clamp(32px, 3.2vw, 48px)"] { font-size: 26px !important; }
+  span[style*="font-size: clamp(28px, 3.4vw, 56px)"] { font-size: 22px !important; }
+  span[style*="font-size: clamp(24px, 2.2vw, 32px)"] { font-size: 20px !important; }
+
+  /* ── 사진 카드 묶음: 옆으로 넘기는 카드 ── */
+  [data-mx~=swipe] { display: flex !important; flex-wrap: nowrap !important; grid-template-columns: none !important; overflow-x: auto !important; overflow-y: hidden; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; overscroll-behavior-x: contain; gap: 12px !important; margin-left: -20px !important; margin-right: -20px !important; padding: 0 20px 6px !important; scroll-padding: 0 20px; scrollbar-width: none; }
+  [data-mx~=swipe]::-webkit-scrollbar { display: none; }
+  [data-mx~=swipe] > * { flex: 0 0 74% !important; width: 74% !important; max-width: none !important; min-width: 0 !important; scroll-snap-align: start; }
+  [data-mx~=swipe] [data-reveal], [data-mx~=swipe] > [data-reveal] { opacity: 1 !important; transform: none !important; clip-path: none !important; }
+  [data-mx~=reels] > * { flex-basis: 68% !important; width: 68% !important; }
+  [data-mx~=voices] > * { flex-basis: 86% !important; width: 86% !important; }
+
+  /* ── 홈 02 Where: 항목마다 바로 아래(카드 안) 사진 ── */
+  [data-mx=wframe] { display: none !important; }
+  [data-mx=wlist] { flex-direction: row !important; justify-content: flex-start !important; overflow-x: auto; scroll-snap-type: x mandatory; gap: 12px; margin: 0 -20px !important; padding: 0 20px 6px !important; border-bottom: 0 !important; scrollbar-width: none; }
+  [data-mx=wlist]::-webkit-scrollbar { display: none; }
+  [data-mx=wlist] > button { flex: 0 0 74% !important; scroll-snap-align: start; border-top: 0 !important; padding: 0 !important; color: #F3F1EC !important; gap: 12px !important; }
+  [data-mx=wlist] > button > span:first-child { grid-template-columns: 30px 1fr auto !important; }
+  [data-mx=wlist] > button > span:nth-child(2):not([data-mx]) { display: none !important; }
+  [data-mx=wimg] { display: block !important; position: relative; width: 100%; aspect-ratio: 4 / 5; background: #111; order: -1; }
+  [data-mx=wimg] image-slot { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+
+  /* ── 번호 + 그림 + 제목 + 설명 카드 → 촘촘한 목록 (홈 Why, 교육 Why Here) ── */
+  [data-mx=why], section[data-screen-label="03 Why Here"] [style*="minmax(min(100%, 260px)"] { grid-template-columns: 1fr !important; gap: 0 !important; background: none !important; border: 0 !important; }
+  [data-mx=why] > div, section[data-screen-label="03 Why Here"] [style*="minmax(min(100%, 260px)"] > * { display: grid !important; grid-template-columns: 76px 1fr; column-gap: 16px; row-gap: 4px; align-items: start; align-content: start; padding: 18px 0 !important; border-top: 1px solid #1B1B1B; background: none !important; }
+  [data-mx=why] > div > div:first-child, section[data-screen-label="03 Why Here"] [style*="minmax(min(100%, 260px)"] > * > div:first-child { grid-row: 1 / span 4; width: 76px; }
+  [data-mx=why] > div > :not(:first-child), section[data-screen-label="03 Why Here"] [style*="minmax(min(100%, 260px)"] > * > :not(:first-child) { grid-column: 2; margin: 0 !important; }
+
+  /* ── 원형 단계 (가로 흐름) → 왼쪽 원 + 오른쪽 설명 목록 ── */
+  html body [data-m=flow] { min-width: 0 !important; }
+  html body [data-m=row] { display: flex !important; flex-direction: column !important; gap: 0 !important; }
+  html body [data-m=row] > * { display: grid !important; grid-template-columns: 84px 1fr; column-gap: 16px; row-gap: 4px; align-items: start !important; justify-items: start !important; text-align: left !important; padding: 16px 0 !important; border-top: 1px solid #1B1B1B !important; border-left: 0 !important; flex: none !important; width: 100% !important; max-width: none !important; }
+  html body [data-m=row] > * > :first-child { grid-row: 1 / span 6; width: 84px !important; height: auto !important; margin: 0 !important; }
+  html body [data-m=row] > * > :not(:first-child) { grid-column: 2; margin: 0 !important; text-align: left !important; max-width: none !important; justify-self: start !important; }
+  html body [data-m=row] > * > [data-step]:first-child { width: 84px !important; }
+  p[style*="justify-self: end"], div[style*="justify-self: end"] { justify-self: start !important; }
+  [data-m=row] [data-step] span[style*="font-size: clamp(34px"] { font-size: 26px !important; }
+
+  /* ── FAQ: 기기 틀 대신 질문 바로 아래 답 ── */
+  [data-m=tablet] { display: none !important; }
+  [data-mx=fqa] { display: block; padding: 0 0 20px 60px; font-size: 14.5px; line-height: 1.75; color: #AAA7A1; white-space: pre-line; }
+
+  /* ── 교육 01 For Who: 체크 카드 2열 ── */
+  section[data-screen-label="01 For Who"] [style*="minmax(min(100%, 240px)"] { grid-template-columns: 1fr 1fr !important; gap: 8px !important; }
+
+  /* ── 전후 사진 한 쌍은 나란히 (칸 160px 넘음) ── */
+  section[data-screen-label="07 Density"] [style*="minmax(min(100%, 360px)"] { grid-template-columns: 1fr 1fr !important; gap: 8px !important; }
+
+  /* ── 교육 갤러리: 2열 (첫 사진만 넓게) ── */
+  html body [data-m=gal] { grid-template-columns: 1fr 1fr !important; grid-auto-rows: auto !important; gap: 8px !important; }
+  html body [data-m=gal] > * { grid-column: auto !important; grid-row: auto !important; aspect-ratio: 4 / 5; min-width: 0; }
+  html body [data-m=gal] > *:first-child { grid-column: 1 / -1 !important; aspect-ratio: 4 / 3; }
+
+  /* ── 푸터 2열 ── */
+  footer > div:first-child { grid-template-columns: 1fr 1fr !important; gap: 28px 16px !important; }
+  footer > div:first-child > div:first-child { grid-column: 1 / -1; }
+  footer { padding-top: 48px !important; }
+}

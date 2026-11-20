@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>THE MO SCALP — 세이지뷰티 더모스칼프 | 두피 SMP 디자인 스튜디오</title>
+<meta name="description" content="두피 상태와 모발 방향, 피부 톤과 밀도를 함께 살펴 개인별 두피 SMP 디자인을 상담합니다. 정수리 · 가르마 · 헤어라인 · 삭발 디자인.">
+<link rel="canonical" href="https://themoscalp.pages.dev/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="THE MO SCALP">
+<meta property="og:title" content="THE MO SCALP — 세이지뷰티 더모스칼프 | 두피 SMP 디자인 스튜디오">
+<meta property="og:description" content="두피 상태와 모발 방향, 피부 톤과 밀도를 함께 살펴 개인별 두피 SMP 디자인을 상담합니다. 정수리 · 가르마 · 헤어라인 · 삭발 디자인.">
+<meta property="og:url" content="https://themoscalp.pages.dev/">
+<meta property="og:image" content="https://themoscalp.pages.dev/og-image.jpg">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#090909">
+<link rel="alternate" type="application/rss+xml" title="THE MO SCALP" href="https://themoscalp.pages.dev/rss.xml">
+
+<script src="/assets/sj-cms.js?v=1"></script>
+<script src="./slots.js?v=1"></script>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="/assets/tms-m.css?v=1">
+<script src="/assets/tms-fit.js?v=1" defer></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <style data-mobile="1">@media (max-width:760px){html,body{overflow-x:hidden}[data-m=flow]{min-width:0!important}[data-m=line]{display:none!important}[data-m=row]{display:grid!important;grid-template-columns:1fr 1fr!important;gap:44px 16px!important}[data-m=row]>*{flex:auto!important;width:auto!important;min-width:0!important;padding-left:0!important;padding-right:0!important;border-left:0!important}[data-m=tones]{flex-direction:column!important;height:auto!important}[data-m=tones]>div{flex:none!important;height:64px}[data-m=tones]>div[data-active="1"]{height:600px}[data-m=vlabel]{writing-mode:horizontal-tb!important;transform:none!important;bottom:auto!important;top:24px!important}[data-m=tablet]{aspect-ratio:auto!important;min-height:540px!important;border-radius:24px!important;padding:10px!important}[data-m=unstick]{position:static!important}[data-m=gal]{grid-template-columns:1fr 1fr!important;grid-auto-rows:44vw!important}[data-m=gal]>*:first-child{grid-column:1 / -1!important}[data-m=hide-m]{display:none!important}[data-m=wrap]{white-space:normal!important}}</style>
+  <style>
+    html,body{margin:0;background:#090909;color:#F3F1EC;font-family:'Pretendard Variable',Pretendard,system-ui,sans-serif;-webkit-font-smoothing:antialiased;word-break:keep-all}
+    *{box-sizing:border-box}
+    a{color:#F3F1EC}a:hover{color:#F05A24}
+    ::selection{background:#F05A24;color:#090909}
+  </style>
+  <script src="./image-slot.js"></script>
+</helmet>
+<dc-import name="SiteNav" active="home" hint-size="100%,0px"></dc-import>
+<div ref="{{ introRef }}" onClick="{{ skipIntro }}" style="position:fixed;inset:0;z-index:100;background:#000;cursor:pointer">
+  <canvas ref="{{ canvasRef }}" style="position:absolute;inset:0;width:100%;height:100%;display:block"></canvas>
+  <span style="position:absolute;right:24px;bottom:20px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.18em;color:#555">SKIP →</span>
+</div>
+
+<section data-screen-label="01 Hero" data-follow-root="" style="position:relative;min-height:100svh;background:#000;overflow:hidden;padding:100px clamp(20px,4vw,56px) 28px;display:flex;flex-direction:column">
+  <div data-zoom="" style="position:absolute;inset:0;background-image:radial-gradient(circle,#2a2a2a 1px,transparent 1.4px);background-size:9px 9px">
+    <video ref="{{ videoRef }}" autoplay="" muted="" loop="" playsinline="" preload="auto" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:contrast(1.05) brightness(.72)"></video>
+  </div>
+  <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(0,0,0,.82) 0%,rgba(0,0,0,.45) 55%,rgba(0,0,0,.2) 100%),linear-gradient(0deg,rgba(0,0,0,.85) 0%,transparent 40%)"></div>
+  <div data-reveal="fade" data-delay="500" style="position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(90deg,rgba(243,241,236,.05) 0 1px,transparent 1px 25%)"></div>
+  <sc-if value="{{ videoMissing }}" hint-placeholder-val="{{ false }}">
+    <span style="position:absolute;right:clamp(20px,4vw,56px);bottom:110px;z-index:3;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;color:#AAA7A1;border:1px dashed #3a3a3a;padding:6px 10px">VIDEO — {{ videoSrc }} 업로드 필요</span>
+  </sc-if>
+  <div data-follow="" style="position:absolute;top:0;left:0;z-index:5;pointer-events:none;opacity:0;transition:opacity .3s;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;color:#F05A24">
+    <span style="position:absolute;left:-12px;top:0;width:24px;height:1px;background:#F05A24"></span>
+    <span style="position:absolute;left:0;top:-12px;width:1px;height:24px;background:#F05A24"></span>
+    <span style="position:absolute;left:16px;top:10px;white-space:nowrap">X <span data-follow-x="">0000</span> / Y <span data-follow-y="">0000</span></span>
+  </div>
+  <div data-reveal="fade" data-delay="200" style="position:relative;display:flex;justify-content:space-between;align-items:center;gap:16px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.18em;color:#AAA7A1">
+    <span>THE MO SCALP <span style="color:#F05A24">by</span> SAYJI BEAUTY</span><span>SCALP DESIGN STUDIO</span>
+  </div>
+  <div style="position:relative;flex:1;display:grid;align-items:end;margin-top:clamp(32px,4vw,56px)">
+    <sc-for list="{{ banners }}" as="s" hint-placeholder-count="1">
+      <div data-parallax="-0.05" style="grid-area:1 / 1;align-self:end;display:flex;flex-direction:column;gap:28px;max-width:960px;opacity:{{ s.op }};visibility:{{ s.vis }};transition:opacity .9s ease,visibility .9s">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.18em;color:#F05A24">BANNER {{ s.no }} / 03</span>
+        <h1 style="margin:0;font-size:clamp(44px,6.6vw,116px);font-weight:800;letter-spacing:-.05em;line-height:1.08;color:#F3F1EC">
+          <span style="display:block;overflow:hidden;padding-bottom:.08em;margin-bottom:-.08em"><span style="display:block;transform:{{ s.ty }};transition:transform 1s cubic-bezier(.2,.7,.1,1) .15s">{{ s.l1 }}</span></span>
+          <span style="display:block;overflow:hidden;padding-bottom:.08em;margin-bottom:-.08em"><span style="display:block;color:#F05A24;transform:{{ s.ty }};transition:transform 1s cubic-bezier(.2,.7,.1,1) .28s">{{ s.l2 }}</span></span>
+        </h1>
+        <p style="margin:0;max-width:620px;font-size:clamp(15px,1.2vw,17px);line-height:1.85;color:#D6D3CD;white-space:pre-line;opacity:{{ s.op }};transform:{{ s.ty2 }};transition:opacity .9s .45s,transform .9s cubic-bezier(.2,.7,.1,1) .45s">{{ s.body }}</p>
+        <span style="font-size:14px;font-weight:700;letter-spacing:.06em;color:#F3F1EC">THE MO SCALP <span style="font-weight:400;color:#AAA7A1">by SAYJI BEAUTY</span></span>
+        <div style="display:flex;flex-wrap:wrap;gap:10px">
+          <a data-magnetic="" href="#case" style="display:flex;align-items:center;gap:12px;height:54px;padding:0 24px;background:#F3F1EC;color:#090909;text-decoration:none;font-size:15px;font-weight:700" style-hover="background:#F05A24;color:#090909">작업 사례 보기 <span style="font-family:'IBM Plex Mono',monospace">→</span></a>
+          <a data-magnetic="" href="http://pf.kakao.com/_BPxoxln" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:12px;height:54px;padding:0 24px;border:1px solid #F05A24;color:#F05A24;text-decoration:none;font-size:15px;font-weight:700" style-hover="background:#F05A24;color:#090909">상담하기</a>
+        </div>
+      </div>
+    </sc-for>
+  </div>
+  <div style="position:relative;margin-top:40px">
+    <div data-reveal="line" data-delay="100" style="height:1px;background:#3a3a3a"></div>
+    <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr)) auto;gap:clamp(12px,2vw,32px);align-items:start">
+      <sc-for list="{{ banners }}" as="s" hint-placeholder-count="3">
+        <button onClick="{{ s.go }}" style="appearance:none;cursor:pointer;background:none;border:0;padding:0 0 4px;text-align:left;display:flex;flex-direction:column;gap:10px;color:{{ s.tabColor }};font-family:inherit;transition:color .3s">
+          <span style="position:relative;display:block;height:2px;margin-top:-1px;overflow:hidden"><span ref="{{ s.barRef }}" style="position:absolute;inset:0;background:#F05A24;transform-origin:left center;transform:scaleX(0)"></span></span>
+          <span style="display:flex;gap:10px;align-items:baseline;font-size:13px;line-height:1.5"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#F05A24">{{ s.no }}</span><span data-m="hide-m" style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ s.title }}</span></span>
+        </button>
+      </sc-for>
+      <span style="padding-top:12px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.18em;color:#AAA7A1;white-space:nowrap">SCROLL ↓</span>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="02 Where" style="background:#0d0d0d;padding:clamp(96px,11vw,168px) clamp(20px,4vw,56px)">
+  <div style="max-width:1440px;margin:0 auto">
+    <div style="display:flex;justify-content:space-between;gap:16px;padding-top:14px;border-top:1px solid #292929;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;color:#AAA7A1"><span style="color:#F05A24">02</span><span>WHERE DO YOU NOTICE IT?</span></div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(32px,5vw,80px);margin-top:clamp(48px,6vw,96px)">
+      <h2 data-reveal="up" style="margin:0;font-size:clamp(36px,4.6vw,72px);font-weight:800;line-height:1.18;letter-spacing:-.04em">신경 쓰이는 건<br>머리카락보다 <span style="color:#F05A24">그 사이</span>입니다.</h2>
+      <p data-reveal="up" data-delay="120" style="margin:0;align-self:end;font-size:17px;line-height:1.85;color:#AAA7A1">정수리의 빈 공간,<br>넓어 보이는 가르마,<br>뒤로 밀려 보이는 헤어라인.<br><br>보이는 위치와 범위가 다르면<br>디자인의 접근도 달라져야 합니다.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:clamp(24px,4vw,64px);margin-top:clamp(56px,6vw,96px);align-items:stretch">
+      <div data-mx="wframe" data-reveal="mask" style="position:relative;aspect-ratio:4/5;max-height:82svh;width:100%;overflow:hidden;background:#111;color:#AAA7A1">
+        <sc-for list="{{ areas }}" as="a" hint-placeholder-count="1">
+          <div style="position:absolute;inset:0;opacity:{{ a.op }};transform:scale({{ a.sc }});transition:opacity .7s ease,transform 1.4s cubic-bezier(.2,.7,.1,1);pointer-events:{{ a.pe }}"><image-slot id="{{ a.slot }}" shape="rect" placeholder="{{ a.ph }}"></image-slot></div>
+        </sc-for>
+        <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(0deg,rgba(0,0,0,.85) 0%,transparent 45%)"></div>
+        <span style="position:absolute;left:16px;top:16px;width:18px;height:18px;border-left:1px solid #F05A24;border-top:1px solid #F05A24;pointer-events:none"></span>
+        <span style="position:absolute;right:16px;top:16px;width:18px;height:18px;border-right:1px solid #F05A24;border-top:1px solid #F05A24;pointer-events:none"></span>
+        <span style="position:absolute;left:44px;top:18px;display:flex;align-items:center;gap:8px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;color:#F05A24;pointer-events:none"><span style="width:6px;height:6px;background:#F05A24"></span>NOW VIEWING</span>
+        <span style="position:absolute;right:44px;top:18px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;color:#F3F1EC;pointer-events:none">{{ areaNo }} / 05</span>
+        <div style="position:absolute;left:clamp(20px,2.4vw,36px);right:clamp(20px,2.4vw,36px);bottom:clamp(20px,2.4vw,36px);display:flex;flex-direction:column;gap:10px;pointer-events:none">
+          <span style="font-size:clamp(48px,6vw,96px);font-weight:800;letter-spacing:-.05em;line-height:.9">{{ areaEn }}</span>
+          <span style="display:flex;gap:14px;align-items:baseline;flex-wrap:wrap"><span style="font-size:17px;font-weight:700">{{ areaKr }}</span><span style="font-size:15px;color:#AAA7A1">{{ areaDesc }}</span></span>
+        </div>
+      </div>
+      <div data-mx="wlist" style="display:flex;flex-direction:column;justify-content:flex-end;border-bottom:1px solid #292929">
+        <sc-for list="{{ areas }}" as="a" hint-placeholder-count="5">
+          <button onClick="{{ a.go }}" onMouseEnter="{{ a.go }}" style="appearance:none;cursor:pointer;background:none;border:0;border-top:1px solid #292929;padding:clamp(18px,2vw,28px) 0;display:flex;flex-direction:column;gap:12px;text-align:left;font-family:inherit;color:{{ a.color }};transition:color .35s">
+            <span style="display:grid;grid-template-columns:56px 1fr auto;align-items:baseline;gap:12px;width:100%">
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.12em;color:{{ a.numColor }}">{{ a.no }}</span>
+              <span style="font-size:clamp(28px,3.4vw,56px);font-weight:800;letter-spacing:-.045em;line-height:1">{{ a.en }}</span>
+              <span style="font-size:15px">{{ a.kr }}</span>
+            </span>
+            <span style="position:relative;display:block;height:1px;margin-left:68px;background:{{ a.track }};overflow:hidden"><span ref="{{ a.barRef }}" style="position:absolute;inset:0;background:#F05A24;transform-origin:left center;transform:scaleX(0)"></span></span>
+            <span data-mx="wimg"><image-slot id="{{ a.slot }}" shape="rect" placeholder="{{ a.ph }}"></image-slot></span>
+          </button>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="03 Directors" style="background:#090909;padding:clamp(96px,11vw,168px) clamp(20px,4vw,56px)">
+  <div style="max-width:1440px;margin:0 auto">
+    <div style="display:flex;justify-content:space-between;gap:16px;padding-top:14px;border-top:1px solid #292929;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;color:#AAA7A1"><span style="color:#F05A24">03</span><span>DIRECTORS</span></div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(32px,5vw,80px);margin-top:clamp(48px,6vw,96px)">
+      <h2 data-reveal="up" style="margin:0;font-size:clamp(40px,5.2vw,84px);font-weight:800;line-height:1.12;letter-spacing:-.045em">기술보다 먼저<br>기준을 만듭니다.</h2>
+      <p data-reveal="up" data-delay="120" style="margin:0;align-self:end;font-size:17px;line-height:1.85;color:#AAA7A1">두피와 모발의 방향,<br>컬러와 밀도를 함께 살펴<br>각 고객에게 필요한 범위를 상담합니다.<br><br>결과가 눈에 띄기 위한 디자인보다<br>기존 모발과 자연스럽게 연결되는<br>표현을 중요하게 생각합니다.</p>
+    </div>
+    <div data-mx="swipe" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,max(280px,calc((100% - 64px) / 3))),1fr));gap:32px;margin-top:clamp(56px,6vw,96px);align-items:start">
+      <sc-for list="{{ directors }}" as="d" hint-placeholder-count="3">
+        <article data-reveal="up" style="display:flex;flex-direction:column;gap:18px">
+          <div style="position:relative;aspect-ratio:4/5;overflow:hidden;background:#111">
+            <sc-for list="{{ d.imgs }}" as="im" hint-placeholder-count="0"><img src="{{ im.src }}" alt="{{ im.alt }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:{{ im.pos }}"></sc-for>
+            <div style="position:absolute;inset:auto 0 0 0;height:45%;background:linear-gradient(0deg,rgba(9,9,9,.92),transparent);pointer-events:none"></div>
+            <span style="position:absolute;left:16px;top:16px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;background:#090909;color:#F05A24;padding:4px 8px">DIRECTOR {{ d.no }}</span>
+            <div style="position:absolute;left:20px;right:20px;bottom:18px;display:flex;justify-content:space-between;align-items:baseline;gap:12px">
+              <span style="font-size:clamp(30px,2.8vw,42px);font-weight:800;letter-spacing:-.04em;line-height:1">{{ d.name }}</span>
+              <span style="font-size:14px;color:#F3F1EC">{{ d.role }}</span>
+            </div>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:6px">
+            <sc-for list="{{ d.fields }}" as="f" hint-placeholder-count="3"><span style="height:28px;display:flex;align-items:center;padding:0 10px;border:1px solid #F05A24;color:#F05A24;font-size:12px;font-weight:600">{{ f }}</span></sc-for>
+          </div>
+          <div style="display:flex;flex-direction:column">
+            <sc-for list="{{ d.top }}" as="c" hint-placeholder-count="4">
+              <div style="display:grid;grid-template-columns:32px 1fr;gap:10px;padding:11px 0;border-top:1px solid #1B1B1B;font-size:14px;line-height:1.55"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#F05A24;padding-top:2px">{{ c.no }}</span><span>{{ c.t }}</span></div>
+            </sc-for>
+          </div>
+          <sc-if value="{{ d.open }}" hint-placeholder-val="{{ false }}">
+            <div style="display:flex;flex-direction:column;gap:18px;padding-top:8px">
+              <sc-for list="{{ d.groups }}" as="g" hint-placeholder-count="3">
+                <div style="display:flex;flex-direction:column;gap:6px">
+                  <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;color:#AAA7A1;padding-bottom:6px;border-bottom:1px solid #292929">{{ g.title }}</span>
+                  <sc-for list="{{ g.items }}" as="it" hint-placeholder-count="3"><span style="display:grid;grid-template-columns:14px 1fr;font-size:13px;line-height:1.6;color:#AAA7A1"><span style="color:#F05A24">·</span><span>{{ it }}</span></span></sc-for>
+                </div>
+              </sc-for>
+            </div>
+          </sc-if>
+          <button onClick="{{ d.toggle }}" style="appearance:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;height:48px;padding:0 16px;background:none;border:1px solid #292929;color:#F3F1EC;font-family:inherit;font-size:14px;font-weight:600" style-hover="border-color:#F05A24;color:#F05A24">{{ d.btn }}<span style="font-family:'IBM Plex Mono',monospace">{{ d.sign }}</span></button>
+        </article>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="04 Dot + Reels" style="background:#000;padding:clamp(96px,11vw,168px) clamp(20px,4vw,56px)">
+  <div style="max-width:1440px;margin:0 auto">
+    <div style="display:flex;justify-content:space-between;gap:16px;padding-top:14px;border-top:1px solid #292929;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;color:#AAA7A1"><span style="color:#F05A24">04</span><span>DOT IS SMALL / WATCH THE DETAIL</span></div>
+    <h2 style="margin:clamp(56px,7vw,112px) 0 0;font-size:clamp(52px,10vw,176px);font-weight:800;line-height:.9;letter-spacing:-.055em">
+      <span style="display:block;overflow:hidden;padding-bottom:.12em;margin-bottom:-.07em"><span data-reveal="clip" style="display:block">DOT IS SMALL<span style="color:#F05A24">.</span></span></span>
+      <span style="display:block;overflow:hidden;padding-bottom:.12em;margin-bottom:-.07em"><span data-reveal="clip" data-delay="120" style="display:block;color:#AAA7A1">DETAIL IS NOT.</span></span>
+    </h2>
+    <div data-mx="swipe reels" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,max(260px,calc((100% - 48px) / 3))),1fr));gap:24px;margin-top:clamp(48px,5vw,80px)">
+      <sc-for list="{{ reels }}" as="r" hint-placeholder-count="3">
+        <div data-reveal="up" style="display:flex;flex-direction:column;gap:12px">
+          <div style="position:relative;aspect-ratio:9/16.5;background:#111;border:1px solid #1B1B1B;overflow:hidden">
+            <sc-if value="{{ r.has }}" hint-placeholder-val="{{ false }}">
+              <iframe src="{{ r.embed }}" title="Instagram Reel" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen="" scrolling="no" style="position:absolute;inset:0;width:100%;height:100%;border:0;background:#111"></iframe>
+            </sc-if>
+            <sc-if value="{{ r.empty }}" hint-placeholder-val="{{ true }}">
+              <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:space-between;padding:20px;background-image:radial-gradient(circle,#262626 1px,transparent 1.4px);background-size:10px 10px">
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;color:#F05A24">REEL {{ r.no }}</span>
+                <span style="display:flex;flex-direction:column;gap:8px;font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.6;letter-spacing:.08em;color:#AAA7A1;background:#000;padding:12px;border:1px dashed #3a3a3a">인스타그램 릴스 링크를 입력하면 이 자리에서 재생됩니다.<span style="color:#F3F1EC">Tweaks → {{ r.prop }}</span></span>
+              </div>
+            </sc-if>
+          </div>
+          <a href="{{ r.link }}" target="_blank" rel="noopener" style="display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid #292929;color:#F3F1EC;text-decoration:none;font-size:15px" style-hover="color:#F05A24"><span>{{ r.title }}</span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.12em">INSTAGRAM ↗</span></a>
+        </div>
+      </sc-for>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(32px,5vw,80px);margin-top:clamp(64px,7vw,112px)">
+      <p data-reveal="up" style="margin:0;font-size:clamp(30px,3.4vw,52px);font-weight:700;line-height:1.25;letter-spacing:-.035em">작은 점 하나도<br>전체 인상을 만듭니다.</p>
+      <p data-reveal="up" data-delay="120" style="margin:0;font-size:17px;line-height:1.85;color:#AAA7A1">두피 위 작은 표현은<br>가까이에서는 작게 보이지만,<br>모였을 때는 전체적인 밀도와 경계를 만듭니다.<br><br>THE MO SCALP는<br>단순히 빈 공간을 채우는 것보다<br>기존 모발과 어우러지는 방향을 중요하게 봅니다.</p>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="05 Color" style="background:#090909;padding:clamp(96px,11vw,168px) clamp(20px,4vw,56px)">
+  <div style="max-width:1440px;margin:0 auto">
+    <div style="display:flex;justify-content:space-between;gap:16px;padding-top:14px;border-top:1px solid #292929;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;color:#AAA7A1"><span style="color:#F05A24">05</span><span>COLOR DESIGN</span></div>
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:32px;margin-top:clamp(48px,6vw,96px)">
+      <h2 style="margin:0;font-size:clamp(44px,6.4vw,108px);font-weight:800;line-height:.9;letter-spacing:-.055em">
+        <span style="display:block;overflow:hidden;padding-bottom:.12em;margin-bottom:-.07em"><span data-reveal="clip" style="display:block">COLOR IS PART</span></span>
+        <span style="display:block;overflow:hidden;padding-bottom:.12em;margin-bottom:-.07em"><span data-reveal="clip" data-delay="100" style="display:block;color:#AAA7A1">OF THE DESIGN<span style="color:#F05A24">.</span></span></span>
+      </h2>
+      <p data-reveal="up" style="margin:0;font-size:clamp(22px,2.2vw,32px);font-weight:700;line-height:1.35;letter-spacing:-.02em">검정이라고<br>모두 같은 검정은 아닙니다.</p>
+    </div>
+    <div data-m="tones" style="display:flex;gap:6px;height:clamp(460px,52vw,640px);margin-top:clamp(48px,5vw,80px)">
+      <sc-for list="{{ tones }}" as="t" hint-placeholder-count="3">
+        <div data-active="{{ t.act }}" onClick="{{ t.pick }}" onMouseEnter="{{ t.pick }}" style="position:relative;flex:{{ t.flex }};min-width:0;overflow:hidden;background:{{ t.bg }};border-top:2px solid {{ t.line }};cursor:pointer;transition:flex .8s cubic-bezier(.2,.7,.1,1),border-color .4s">
+          <div style="position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(circle,rgba(243,241,236,.16) 1px,transparent 1.5px);background-size:{{ t.dot }};-webkit-mask-image:linear-gradient(0deg,#000,transparent 70%);mask-image:linear-gradient(0deg,#000,transparent 70%)"></div>
+          <span data-m="vlabel" style="position:absolute;left:18px;bottom:22px;writing-mode:vertical-rl;transform:rotate(180deg);font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.2em;color:#F3F1EC;opacity:{{ t.offOp }};transition:opacity .4s;white-space:nowrap">{{ t.no }} / {{ t.name }}</span>
+          <div style="position:absolute;inset:0;min-width:320px;padding:clamp(20px,2.4vw,36px);display:flex;flex-direction:column;justify-content:space-between;opacity:{{ t.onOp }};transition:opacity .5s ease {{ t.delay }}">
+            <div style="display:flex;justify-content:space-between;gap:16px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em"><span style="color:#F05A24;white-space:nowrap">TONE {{ t.no }}</span><span style="color:#AAA7A1;white-space:nowrap">{{ t.hex }}</span></div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:24px;align-items:end">
+              <div style="display:flex;flex-direction:column;gap:14px">
+                <span style="font-size:clamp(56px,7vw,120px);font-weight:800;letter-spacing:-.06em;line-height:.85">{{ t.name }}</span>
+                <span style="font-size:16px;line-height:1.75;max-width:380px">{{ t.desc }}</span>
+                <span style="display:flex;gap:10px;align-items:baseline;font-size:14px;color:#AAA7A1"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.12em;color:#F05A24">MATCH</span>{{ t.match }}</span>
+              </div>
+              <div style="position:relative;aspect-ratio:4/5;max-width:240px;justify-self:end;width:100%;background:rgba(0,0,0,.35);color:#AAA7A1"><image-slot id="{{ t.slot }}" shape="rect" placeholder="{{ t.ph }}"></image-slot></div>
+            </div>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(32px,5vw,80px);margin-top:clamp(40px,4vw,64px)">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;color:#AAA7A1">HOVER / TAP A TONE</span>
+      <p data-reveal="up" style="margin:0;font-size:17px;line-height:1.85;color:#AAA7A1">현재 모발의 색, 두피 톤, 기존 작업 여부, 원하는 밀도에 따라 보이는 색의 느낌은 달라질 수 있습니다. THE MO SCALP는 상담 과정에서 현재 상태를 살펴보고 어울리는 색상과 밀도의 방향을 함께 조율합니다.</p>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="06 Control" style="background:#0d0d0d;padding:clamp(96px,11vw,168px) clamp(20px,4vw,56px)">
+  <div style="max-width:1440px;margin:0 auto">
+    <div style="display:flex;justify-content:space-between;gap:16px;padding-top:14px;border-top:1px solid #292929;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;color:#AAA7A1"><span style="color:#F05A24">06</span><span>TECHNIQUE</span></div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(40px,6vw,96px);margin-top:clamp(48px,6vw,96px);align-items:start">
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <div data-reveal="mask" style="position:relative;aspect-ratio:4/5;color:#AAA7A1;background:#111"><image-slot id="home-technique" shape="rect" placeholder="작업 중 Machine / Hand Detail"></image-slot></div>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;color:#AAA7A1">FIG. 06 — TOUCH CONTROL</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:32px">
+        <h2 style="margin:0;font-size:clamp(52px,8vw,136px);font-weight:800;line-height:.88;letter-spacing:-.055em">
+          <span style="display:block;overflow:hidden;padding-bottom:.12em;margin-bottom:-.07em"><span data-reveal="clip" style="display:block">CONTROL</span></span>
+          <span style="display:block;overflow:hidden;padding-bottom:.12em;margin-bottom:-.07em"><span data-reveal="clip" data-delay="120" style="display:block;color:#AAA7A1">OVER FORCE.</span></span>
+        </h2>
+        <p data-reveal="up" style="margin:0;font-size:clamp(24px,2.4vw,34px);font-weight:700;line-height:1.35;letter-spacing:-.02em">더 진하게가 아니라,<br>필요한 만큼.</p>
+        <p data-reveal="up" style="margin:0;font-size:17px;line-height:1.85;color:#AAA7A1">한 번에 강하게 표현하기보다<br>두피 상태와 기존 모발을 고려해<br>터치 강도와 밀도의 균형을 조절합니다.<br><br>과도한 반복 터치를 줄이고<br>자연스러운 연결감을 만드는 것을 중요하게 생각합니다.</p>
+        <div data-reveal="fade" style="display:flex;flex-direction:column;gap:12px;margin-top:16px">
+          <div style="position:relative;height:28px;background:repeating-linear-gradient(90deg,#3a3a3a 0 1px,transparent 1px 10px);border-bottom:1px solid #3a3a3a">
+            <span style="position:absolute;left:58%;top:-6px;bottom:-6px;width:2px;background:#F05A24"></span>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;color:#AAA7A1"><span>LIGHT</span><span style="color:#F05A24">필요한 만큼</span><span>FORCE</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="07 Density" style="background:#090909;padding:clamp(96px,11vw,168px) clamp(20px,4vw,56px)">
+  <div style="max-width:1440px;margin:0 auto">
+    <div style="display:flex;justify-content:space-between;gap:16px;padding-top:14px;border-top:1px solid #292929;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;color:#AAA7A1"><span style="color:#F05A24">07</span><span>NATURAL DENSITY</span></div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(32px,5vw,80px);margin-top:clamp(48px,6vw,96px)">
+      <h2 data-reveal="up" style="margin:0;font-size:clamp(36px,4.6vw,72px);font-weight:800;line-height:1.18;letter-spacing:-.04em">멀리서는 밀도,<br>가까이서는 디테일.</h2>
+      <p data-reveal="up" data-delay="120" style="margin:0;align-self:end;font-size:17px;line-height:1.85;color:#AAA7A1">전체적인 인상은 자연스럽게,<br>가까이에서 보았을 때도<br>기존 모발과 지나치게 분리되어 보이지 않도록.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));gap:clamp(12px,1.6vw,24px);margin-top:clamp(56px,6vw,96px)">
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <div data-reveal="mask" style="position:relative;aspect-ratio:4/5;color:#AAA7A1;background:#111"><image-slot id="home-density-before" shape="rect" placeholder="BEFORE — 4:5"></image-slot></div>
+        <span style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;color:#AAA7A1"><span>BEFORE</span><span>A</span></span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <div data-reveal="mask" data-delay="160" style="position:relative;aspect-ratio:4/5;color:#AAA7A1;background:#111"><image-slot id="home-density-after" shape="rect" placeholder="AFTER — 4:5"></image-slot></div>
+        <span style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;color:#AAA7A1"><span style="color:#F05A24">AFTER</span><span>B</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="case" data-screen-label="08 Case" style="background:#000;padding:clamp(96px,11vw,168px) clamp(20px,4vw,56px)">
+  <div style="max-width:1440px;margin:0 auto">
+    <div style="display:flex;justify-content:space-between;gap:16px;padding-top:14px;border-top:1px solid #292929;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;color:#AAA7A1"><span style="color:#F05A24">08</span><span>REAL CASE</span></div>
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:32px;margin-top:clamp(48px,6vw,96px)">
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <h2 style="margin:0;font-size:clamp(56px,9vw,152px);font-weight:800;line-height:.88;letter-spacing:-.055em;overflow:hidden;padding-bottom:.12em;margin-bottom:-.07em"><span data-reveal="clip" style="display:block">REAL CASE</span></h2>
+        <p data-reveal="up" style="margin:0;font-size:clamp(22px,2.2vw,30px);font-weight:700;letter-spacing:-.02em">실제 작업으로 확인하세요.</p>
+      </div>
+      <a href="/case" style="display:flex;align-items:center;gap:12px;font-size:15px;font-weight:600;color:#F3F1EC;text-decoration:none;padding-bottom:6px;border-bottom:1px solid #F05A24" style-hover="color:#F05A24">전체 아카이브 보기 <span style="font-family:'IBM Plex Mono',monospace">→</span></a>
+    </div>
+    <div data-mx="swipe" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,max(300px,calc((100% - 48px) / 3))),1fr));gap:24px;margin-top:clamp(48px,5vw,80px)">
+      <sc-for list="{{ cases }}" as="c" hint-placeholder-count="6">
+        <article data-reveal="up" style="display:flex;flex-direction:column;gap:18px;padding:16px 16px 22px;background:#111111;border-top:1px solid #F05A24">
+          <div style="position:relative;aspect-ratio:4/5;overflow:hidden;background:#1B1B1B;color:#AAA7A1;user-select:none">
+            <image-slot id="{{ c.afterSlot }}" shape="rect" placeholder="{{ c.afterPh }}"></image-slot>
+            <div style="position:absolute;inset:0;clip-path:inset(0 {{ c.clipR }}% 0 0);background:#1B1B1B"><image-slot id="{{ c.beforeSlot }}" shape="rect" placeholder="{{ c.beforePh }}"></image-slot></div>
+            <span style="position:absolute;left:10px;bottom:10px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;background:#090909;color:#F3F1EC;padding:4px 8px;pointer-events:none">BEFORE</span>
+            <span style="position:absolute;right:10px;bottom:10px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;background:#F05A24;color:#090909;padding:4px 8px;pointer-events:none">AFTER</span>
+            <div onPointerDown="{{ c.onDown }}" style="position:absolute;top:0;bottom:0;left:{{ c.pos }}%;width:44px;margin-left:-22px;cursor:ew-resize;touch-action:none;z-index:3;display:flex;justify-content:center;align-items:center">
+              <span style="position:absolute;top:0;bottom:0;left:21px;width:2px;background:#F05A24"></span>
+              <span style="position:relative;width:32px;height:32px;background:#F05A24;color:#090909;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:12px">↔</span>
+            </div>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding-bottom:12px;border-bottom:1px solid #292929">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;color:#F05A24">CASE {{ c.no }}</span>
+            <span style="font-size:clamp(24px,2.2vw,32px);font-weight:800;letter-spacing:-.04em;line-height:1">{{ c.area }}</span>
+          </div>
+          <p style="margin:0;font-size:17px;font-weight:700;line-height:1.5;letter-spacing:-.02em;white-space:pre-line">{{ c.head }}</p>
+          <dl style="margin:0;display:grid;grid-template-columns:1fr 1fr;gap:14px 16px">
+            <sc-for list="{{ c.fields }}" as="f" hint-placeholder-count="4">
+              <div style="display:flex;flex-direction:column;gap:4px;padding-top:10px;border-top:1px solid #1B1B1B">
+                <dt style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;color:#AAA7A1">{{ f.k }}</dt>
+                <dd style="margin:0;font-size:13px;line-height:1.55">{{ f.v }}</dd>
+              </div>
+            </sc-for>
+          </dl>
+        </article>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="09 Process" style="background:#0d0d0d;padding:clamp(96px,11vw,168px) 0">
+  <div style="max-width:1440px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
+    <div style="display:flex;justify-content:space-between;gap:16px;padding-top:14px;border-top:1px solid #292929;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;color:#AAA7A1"><span style="color:#F05A24">09</span><span>PROCESS</span></div>
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px;margin-top:clamp(48px,6vw,96px)">
+      <h2 data-reveal="up" style="margin:0;font-size:clamp(36px,4.6vw,72px);font-weight:800;line-height:1.18;letter-spacing:-.04em">상담부터 마지막 확인까지,<br>한 사람의 기준으로.</h2>
+      <a href="/process" style="display:flex;align-items:center;gap:12px;font-size:15px;font-weight:600;color:#F3F1EC;text-decoration:none;padding-bottom:6px;border-bottom:1px solid #F05A24" style-hover="color:#F05A24">과정 자세히 <span style="font-family:'IBM Plex Mono',monospace">→</span></a>
+    </div>
+  </div>
+  <div style="overflow-x:auto;scrollbar-width:none;margin-top:clamp(56px,7vw,112px)">
+    <div data-m="flow" style="max-width:1440px;min-width:920px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
+      <div data-progress-root="5" style="position:relative">
+        <div data-m="line" style="position:absolute;left:10%;right:10%;top:calc(clamp(116px,12vw,184px) / 2);height:1px;background:#292929">
+          <div data-progress-line="" style="position:absolute;inset:0;background:#F05A24;transform-origin:left center;transform:scaleX(0)"></div>
+        </div>
+        <div data-m="row" style="position:relative;display:grid;grid-template-columns:repeat(5,1fr)">
+          <sc-for list="{{ steps }}" as="s" hint-placeholder-count="5">
+            <div style="display:flex;flex-direction:column;align-items:center;gap:22px;text-align:center;padding:0 8px">
+              <div data-step="{{ $index }}" data-on="#F05A24" data-off="#3a3a3a" style="width:clamp(116px,12vw,184px);aspect-ratio:1;border-radius:50%;border:1px solid currentColor;color:#3a3a3a;background:#0d0d0d;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;transition:color .5s">
+                <span style="font-size:clamp(34px,3.8vw,58px);font-weight:800;letter-spacing:-.05em;line-height:1;color:#F3F1EC">{{ s.no }}</span>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.18em;color:#AAA7A1">{{ s.en }}</span>
+              </div>
+              <span style="font-size:15px;line-height:1.65;color:#F3F1EC;max-width:180px">{{ s.kr }}</span>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="10 Why" style="background:#090909;padding:clamp(96px,11vw,168px) clamp(20px,4vw,56px)">
+  <div style="max-width:1440px;margin:0 auto">
+    <div style="display:flex;justify-content:space-between;gap:16px;padding-top:14px;border-top:1px solid #292929;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;color:#AAA7A1"><span style="color:#F05A24">10</span><span>WHY THE MO SCALP</span></div>
+    <h2 data-reveal="up" style="margin:clamp(48px,6vw,96px) 0 0;font-size:clamp(36px,4.6vw,72px);font-weight:800;line-height:1.18;letter-spacing:-.04em">자연스러움은<br>우연히 만들어지지 않습니다.</h2>
+    <div data-mx="why" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:1px;background:#1B1B1B;border:1px solid #1B1B1B;margin-top:clamp(56px,7vw,112px)">
+      <div data-reveal="up" style="background:#090909;padding:clamp(20px,2vw,28px);display:flex;flex-direction:column;gap:22px">
+        <div style="position:relative;aspect-ratio:1;background:#111">
+          <span style="position:absolute;left:12%;top:27%;width:46%;aspect-ratio:1;border-radius:50%;background:#0b0b0b;border:1px solid #3a3a3a"></span>
+          <span style="position:absolute;left:27%;top:27%;width:46%;aspect-ratio:1;border-radius:50%;background:#2b2724;opacity:.92"></span>
+          <span style="position:absolute;left:42%;top:27%;width:46%;aspect-ratio:1;border-radius:50%;background:#4a4541;border:1px solid #F05A24;opacity:.9"></span>
+        </div>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.14em;color:#F05A24">01</span>
+        <span style="font-size:clamp(24px,2.2vw,32px);font-weight:800;letter-spacing:-.03em;line-height:1.05">PERSONAL COLOR</span>
+        <span style="font-size:15px;line-height:1.75;color:#AAA7A1">개인별 모발과 두피 톤을 고려한<br>색상 방향 상담.</span>
+      </div>
+      <div data-reveal="up" data-delay="80" style="background:#090909;padding:clamp(20px,2vw,28px);display:flex;flex-direction:column;gap:22px">
+        <div style="position:relative;aspect-ratio:1;background:#111">
+          <span style="position:absolute;inset:14%;border:1px solid #292929;background-image:radial-gradient(circle,#F3F1EC 1.3px,transparent 1.7px);background-size:11px 11px;-webkit-mask-image:linear-gradient(135deg,#000 10%,transparent 90%);mask-image:linear-gradient(135deg,#000 10%,transparent 90%)"></span>
+          <span style="position:absolute;left:14%;right:14%;bottom:14%;height:2px;background:#F05A24;transform-origin:left;transform:scaleX(.6)"></span>
+        </div>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.14em;color:#F05A24">02</span>
+        <span style="font-size:clamp(24px,2.2vw,32px);font-weight:800;letter-spacing:-.03em;line-height:1.05">DENSITY CONTROL</span>
+        <span style="font-size:15px;line-height:1.75;color:#AAA7A1">부위별 노출 정도와<br>기존 모발 밀도를 고려한 설계.</span>
+      </div>
+      <div data-reveal="up" data-delay="160" style="background:#090909;padding:clamp(20px,2vw,28px);display:flex;flex-direction:column;gap:22px">
+        <div style="position:relative;aspect-ratio:1;background:#111">
+          <span style="position:absolute;left:0;right:0;top:50%;height:1px;background:#292929"></span>
+          <span style="position:absolute;top:0;bottom:0;left:50%;width:1px;background:#292929"></span>
+          <span style="position:absolute;left:50%;top:50%;width:44%;aspect-ratio:1;border-radius:50%;border:1px solid #F3F1EC;transform:translate(-50%,-50%)"></span>
+          <span style="position:absolute;left:50%;top:50%;width:12px;height:12px;border-radius:50%;background:#F05A24;transform:translate(-50%,-50%)"></span>
+          <span style="position:absolute;right:10px;bottom:8px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;color:#AAA7A1">×1:1</span>
+        </div>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.14em;color:#F05A24">03</span>
+        <span style="font-size:clamp(24px,2.2vw,32px);font-weight:800;letter-spacing:-.03em;line-height:1.05">DETAIL TOUCH</span>
+        <span style="font-size:15px;line-height:1.75;color:#AAA7A1">전체를 한 번에 강하게 채우기보다<br>작은 디테일을 반복적으로 확인.</span>
+      </div>
+      <div data-reveal="up" data-delay="240" style="background:#090909;padding:clamp(20px,2vw,28px);display:flex;flex-direction:column;gap:22px">
+        <div style="position:relative;aspect-ratio:1;background:#111">
+          <span style="position:absolute;left:12%;top:31%;width:38%;aspect-ratio:1;border-radius:50%;border:1px solid #F3F1EC"></span>
+          <span style="position:absolute;left:46%;top:31%;width:38%;aspect-ratio:1;border-radius:50%;border:1px solid #F05A24"></span>
+          <span style="position:absolute;left:0;right:0;bottom:10px;text-align:center;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;color:#AAA7A1">ONE TO ONE</span>
+        </div>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.14em;color:#F05A24">04</span>
+        <span style="font-size:clamp(24px,2.2vw,32px);font-weight:800;letter-spacing:-.03em;line-height:1.05">1:1 CARE</span>
+        <span style="font-size:15px;line-height:1.75;color:#AAA7A1">상담부터 디자인,<br>진행 방향 안내까지<br>1:1 중심으로 진행.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="11 Reviews" style="background:#000;padding:clamp(96px,11vw,168px) 0;overflow:hidden">
+  <div style="max-width:1440px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
+    <div style="display:flex;justify-content:space-between;gap:16px;padding-top:14px;border-top:1px solid #292929;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;color:#AAA7A1"><span style="color:#F05A24">11</span><span>REVIEWS</span></div>
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:32px;margin-top:clamp(48px,6vw,96px)">
+      <h2 style="margin:0;font-size:clamp(44px,6.6vw,112px);font-weight:800;line-height:.92;letter-spacing:-.055em">
+        <span style="display:block;overflow:hidden;padding-bottom:.12em;margin-bottom:-.07em"><span data-reveal="clip" style="display:block">RESULTS ARE SEEN.</span></span>
+        <span style="display:block;overflow:hidden;padding-bottom:.12em;margin-bottom:-.07em"><span data-reveal="clip" data-delay="120" style="display:block;color:#AAA7A1">TRUST IS HEARD.</span></span>
+      </h2>
+      <p data-reveal="up" style="margin:0;font-size:clamp(20px,2vw,28px);font-weight:700;line-height:1.4;letter-spacing:-.02em">결과는 사진으로,<br>경험은 후기에서 확인하세요.</p>
+    </div>
+  </div>
+  <div onMouseEnter="{{ pauseMarquee }}" onMouseLeave="{{ playMarquee }}" style="margin-top:clamp(48px,6vw,96px)">
+    <div ref="{{ trackRef }}" style="display:flex;width:max-content;will-change:transform">
+      <div ref="{{ marqARef }}" style="display:flex;gap:16px;padding-right:16px">
+        <figure style="margin:0;width:clamp(280px,26vw,360px);background:#111;border:1px solid #1B1B1B;display:flex;flex-direction:column">
+          <div style="position:relative;aspect-ratio:4/5;background:#1B1B1B;color:#AAA7A1"><image-slot id="home-review-1" shape="rect" placeholder="후기 사진 — 4:5"></image-slot></div>
+          <div style="padding:22px;display:flex;flex-direction:column;gap:16px">
+            <span style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;white-space:nowrap;gap:8px"><span style="color:#F05A24">REVIEW 001</span><span style="color:#F05A24">NAVER PLACE</span></span>
+            <blockquote data-sj-id="home-review-1" style="margin:0;font-size:15px;line-height:1.75;color:#AAA7A1">네이버 플레이스 실제 후기 원문을 입력하세요.</blockquote>
+          </div>
+        </figure>
+        <figure style="margin:0;width:clamp(280px,26vw,360px);background:#111;border:1px solid #1B1B1B;display:flex;flex-direction:column">
+          <div style="position:relative;aspect-ratio:4/5;background:#1B1B1B;color:#AAA7A1"><image-slot id="home-review-2" shape="rect" placeholder="후기 사진 — 4:5"></image-slot></div>
+          <div style="padding:22px;display:flex;flex-direction:column;gap:16px">
+            <span style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;white-space:nowrap;gap:8px"><span style="color:#F05A24">REVIEW 002</span><span style="color:#F05A24">NAVER PLACE</span></span>
+            <blockquote data-sj-id="home-review-2" style="margin:0;font-size:15px;line-height:1.75;color:#AAA7A1">네이버 플레이스 실제 후기 원문을 입력하세요.</blockquote>
+          </div>
+        </figure>
+        <figure style="margin:0;width:clamp(280px,26vw,360px);background:#111;border:1px solid #1B1B1B;display:flex;flex-direction:column">
+          <div style="position:relative;aspect-ratio:4/5;background:#1B1B1B;color:#AAA7A1"><image-slot id="home-review-3" shape="rect" placeholder="후기 사진 — 4:5"></image-slot></div>
+          <div style="padding:22px;display:flex;flex-direction:column;gap:16px">
+            <span style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;white-space:nowrap;gap:8px"><span style="color:#F05A24">REVIEW 003</span><span style="color:#F05A24">NAVER PLACE</span></span>
+            <blockquote data-sj-id="home-review-3" style="margin:0;font-size:15px;line-height:1.75;color:#AAA7A1">네이버 플레이스 실제 후기 원문을 입력하세요.</blockquote>
+          </div>
+        </figure>
+        <figure style="margin:0;width:clamp(280px,26vw,360px);background:#111;border:1px solid #1B1B1B;display:flex;flex-direction:column">
+          <div style="position:relative;aspect-ratio:4/5;background:#1B1B1B;color:#AAA7A1"><image-slot id="home-review-4" shape="rect" placeholder="후기 사진 — 4:5"></image-slot></div>
+          <div style="padding:22px;display:flex;flex-direction:column;gap:16px">
+            <span style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;white-space:nowrap;gap:8px"><span style="color:#F05A24">REVIEW 004</span><span style="color:#F05A24">NAVER PLACE</span></span>
+            <blockquote data-sj-id="home-review-4" style="margin:0;font-size:15px;line-height:1.75;color:#AAA7A1">네이버 플레이스 실제 후기 원문을 입력하세요.</blockquote>
+          </div>
+        </figure>
+        <figure style="margin:0;width:clamp(280px,26vw,360px);background:#111;border:1px solid #1B1B1B;display:flex;flex-direction:column">
+          <div style="position:relative;aspect-ratio:4/5;background:#1B1B1B;color:#AAA7A1"><image-slot id="home-review-5" shape="rect" placeholder="후기 사진 — 4:5"></image-slot></div>
+          <div style="padding:22px;display:flex;flex-direction:column;gap:16px">
+            <span style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;white-space:nowrap;gap:8px"><span style="color:#F05A24">REVIEW 005</span><span style="color:#F05A24">NAVER PLACE</span></span>
+            <blockquote data-sj-id="home-review-5" style="margin:0;font-size:15px;line-height:1.75;color:#AAA7A1">네이버 플레이스 실제 후기 원문을 입력하세요.</blockquote>
+          </div>
+        </figure>
+      </div>
+      <div ref="{{ marqBRef }}" aria-hidden="true" style="display:flex;gap:16px;padding-right:16px"></div>
+    </div>
+  </div>
+  <div style="max-width:1440px;margin:32px auto 0;padding:0 clamp(20px,4vw,56px);display:flex;justify-content:flex-end">
+    <a href="https://m.place.naver.com/place/2050630772" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:12px;font-size:15px;font-weight:600;color:#F3F1EC;text-decoration:none;padding-bottom:6px;border-bottom:1px solid #F05A24" style-hover="color:#F05A24">네이버 플레이스 후기 전체 보기 <span style="font-family:'IBM Plex Mono',monospace">↗</span></a>
+  </div>
+</section>
+
+<section data-screen-label="13 FAQ" style="background:#090909;padding:clamp(96px,11vw,168px) clamp(20px,4vw,56px)">
+  <div style="max-width:1440px;margin:0 auto">
+    <div style="display:flex;justify-content:space-between;gap:16px;padding-top:14px;border-top:1px solid #292929;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;color:#AAA7A1"><span style="color:#F05A24">13</span><span>FAQ</span></div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:clamp(40px,6vw,96px);margin-top:clamp(48px,6vw,96px);align-items:center">
+      <div style="display:flex;flex-direction:column;gap:28px">
+        <h2 style="margin:0;font-size:clamp(56px,8vw,136px);font-weight:800;line-height:.88;letter-spacing:-.055em">FAQ<span style="color:#F05A24">.</span></h2>
+        <p style="margin:0;font-size:16px;line-height:1.8;color:#AAA7A1">자주 묻는 질문을 정리했습니다.<br>그 외의 내용은 카카오톡으로 문의해 주세요.</p>
+        <div style="display:flex;flex-direction:column;border-bottom:1px solid #292929">
+          <sc-for list="{{ faqs }}" as="q" hint-placeholder-count="5">
+            <button onClick="{{ q.pick }}" style="appearance:none;cursor:pointer;background:none;border:0;border-top:1px solid #292929;padding:20px 0;display:grid;grid-template-columns:52px 1fr 20px;align-items:baseline;gap:8px;text-align:left;font-family:inherit;color:{{ q.color }};transition:color .3s">
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.12em;color:#F05A24">{{ q.no }}</span>
+              <span style="font-size:clamp(17px,1.5vw,20px);font-weight:700;letter-spacing:-.02em">{{ q.q }}</span>
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:14px;color:{{ q.arrowColor }}">→</span>
+            </button>
+            <sc-if value="{{ q.open }}" hint-placeholder-val="{{ false }}"><div data-mx="fqa">{{ q.a }}</div></sc-if>
+          </sc-for>
+        </div>
+      </div>
+      <div data-m="tablet" data-reveal="up" style="position:relative;width:100%;max-width:760px;justify-self:end;aspect-ratio:4/3;min-height:460px;background:#1B1B1B;border:1px solid #292929;border-radius:36px;padding:clamp(14px,1.6vw,22px);box-shadow:0 40px 80px rgba(0,0,0,.6)">
+        <span style="position:absolute;left:50%;top:clamp(4px,.6vw,8px);width:6px;height:6px;border-radius:50%;background:#3a3a3a;transform:translateX(-50%)"></span>
+        <span style="position:absolute;right:-3px;top:18%;width:3px;height:44px;border-radius:2px;background:#292929"></span>
+        <div style="width:100%;height:100%;background:#0b0b0b;border-radius:20px;overflow:hidden;display:flex;flex-direction:column">
+          <div style="display:flex;align-items:center;gap:12px;padding:14px 20px;border-bottom:1px solid #1B1B1B">
+            <span style="width:34px;height:34px;border-radius:50%;background:#111;border:1px solid #292929;display:flex;align-items:center;justify-content:center"><img src="./logo.png" alt="" style="width:22px;height:auto"></span>
+            <span style="display:flex;flex-direction:column;gap:3px"><span style="font-size:14px;font-weight:800;white-space:nowrap">THE MO SCALP</span><span style="font-size:11px;color:#AAA7A1;white-space:nowrap">상담 · FAQ</span></span>
+            <span style="margin-left:auto;display:flex;align-items:center;gap:6px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;color:#F05A24"><span style="width:6px;height:6px;border-radius:50%;background:#F05A24"></span>ONLINE</span>
+          </div>
+          <div style="flex:1;display:flex;flex-direction:column;justify-content:flex-end;gap:16px;padding:clamp(16px,2vw,28px);overflow:hidden">
+            <span style="align-self:center;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;color:#555">{{ faqNo }} / 05</span>
+            <div ref="{{ qRef }}" style="align-self:flex-end;max-width:76%;background:#292929;padding:14px 18px;border-radius:18px 18px 4px 18px;font-size:clamp(15px,1.3vw,17px);font-weight:600;line-height:1.6">{{ faqQ }}</div>
+            <div ref="{{ aRef }}" style="display:flex;align-items:flex-end;gap:10px;max-width:86%">
+              <span style="flex:0 0 32px;width:32px;height:32px;border-radius:50%;background:#111;border:1px solid #292929;display:flex;align-items:center;justify-content:center"><img src="./logo.png" alt="" style="width:20px;height:auto"></span>
+              <div style="background:#111;border:1px solid #F05A24;padding:14px 18px;border-radius:18px 18px 18px 4px;font-size:clamp(14px,1.2vw,16px);line-height:1.75;color:#F3F1EC;white-space:pre-line">{{ faqA }}</div>
+            </div>
+          </div>
+          <a href="http://pf.kakao.com/_BPxoxln" target="_blank" rel="noopener" style="margin:0 16px 16px;height:50px;border:1px solid #292929;border-radius:25px;display:flex;align-items:center;justify-content:space-between;padding:0 6px 0 20px;color:#AAA7A1;text-decoration:none;font-size:14px" style-hover="border-color:#F05A24;color:#F3F1EC">카카오톡으로 이어서 문의하기<span style="width:38px;height:38px;border-radius:50%;background:#F05A24;color:#090909;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace">→</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="14 Contact" style="background:#090909;padding:0 clamp(12px,2vw,32px) clamp(12px,2vw,32px)">
+  <div style="position:relative;border:1px solid #F05A24;padding:clamp(64px,9vw,152px) clamp(20px,5vw,96px)">
+    <span style="position:absolute;top:-8px;left:24px;background:#090909;padding:0 10px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;color:#F05A24">14 — CONTACT</span>
+    <span style="position:absolute;bottom:-8px;right:24px;background:#090909;padding:0 10px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;color:#F05A24">010-7932-7927</span>
+    <h2 style="margin:0;font-size:clamp(48px,8.4vw,148px);font-weight:800;line-height:.9;letter-spacing:-.055em">
+      <span style="display:block;overflow:hidden;padding-bottom:.12em;margin-bottom:-.07em"><span data-reveal="clip" style="display:block">YOUR SCALP.</span></span>
+      <span style="display:block;overflow:hidden;padding-bottom:.12em;margin-bottom:-.07em"><span data-reveal="clip" data-delay="100" style="display:block;color:#AAA7A1">YOUR DENSITY.</span></span>
+      <span style="display:block;overflow:hidden;padding-bottom:.12em;margin-bottom:-.07em"><span data-reveal="clip" data-delay="200" style="display:block">YOUR DESIGN<span style="color:#F05A24">.</span></span></span>
+    </h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:40px;margin-top:clamp(48px,6vw,96px);align-items:end">
+      <p data-reveal="up" style="margin:0;font-size:clamp(22px,2.2vw,32px);font-weight:700;line-height:1.4;letter-spacing:-.02em">어떤 디자인이 필요한지는<br>현재 상태를 보는 것부터 시작합니다.</p>
+      <div data-reveal="up" data-delay="120" style="display:flex;flex-wrap:wrap;gap:10px">
+        <a data-magnetic="" href="http://pf.kakao.com/_BPxoxln" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:14px;height:64px;padding:0 30px;background:#F05A24;color:#090909;text-decoration:none;font-size:17px;font-weight:700" style-hover="background:#C94318;color:#090909">카카오톡으로 상담하기 <span style="font-family:'IBM Plex Mono',monospace">→</span></a>
+        <a data-magnetic="" href="https://m.place.naver.com/place/2050630772" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:14px;height:64px;padding:0 30px;border:1px solid #292929;color:#F3F1EC;text-decoration:none;font-size:17px;font-weight:600" style-hover="border-color:#F3F1EC;color:#F3F1EC">네이버 플레이스 보기 <span style="font-family:'IBM Plex Mono',monospace">↗</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+<section data-screen-label="12 Education" style="background:#1B1B1B;padding:clamp(72px,8vw,120px) clamp(20px,4vw,56px)">
+  <div style="max-width:1440px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:32px;align-items:end">
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.18em;color:#F05A24">12 — FOR ARTIST</span>
+      <img src="./logo.png" alt="AIR-SHADING" style="width:72px;height:auto;opacity:.9">
+      <span style="font-size:14px;color:#AAA7A1">에어닷 SMP 대구경북 교육지사</span>
+      <h2 data-reveal="up" style="margin:0;font-size:clamp(32px,3.6vw,56px);font-weight:800;line-height:1.15;letter-spacing:-.04em">기술을 배우고 싶다면.</h2>
+    </div>
+    <p data-reveal="up" style="margin:0;font-size:16px;line-height:1.8;color:#AAA7A1">THE MO SCALP의 색상 상담,<br>밀도 설계와 실제 작업 방식을<br>1:1 교육으로 안내합니다.</p>
+  </div>
+  <div style="max-width:1440px;margin:clamp(40px,4vw,64px) auto 0;padding-top:24px;border-top:1px solid #292929;display:flex;justify-content:flex-end">
+    <a data-magnetic="" href="http://pf.kakao.com/_BPxoxln" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:12px;height:54px;padding:0 24px;border:1px solid #F3F1EC;color:#F3F1EC;text-decoration:none;font-size:15px;font-weight:700" style-hover="border-color:#F05A24;color:#F05A24">1:1 교육 문의 <span style="font-family:'IBM Plex Mono',monospace">→</span></a>
+  </div>
+</section>
+
+<dc-import name="SiteFooter" hint-size="100%,320px"></dc-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;intro&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;assemble&quot;,&quot;scan&quot;,&quot;wind&quot;,&quot;grid&quot;,&quot;pulse&quot;],&quot;default&quot;:&quot;assemble&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Hero Intro&quot;},&quot;heroVideo&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;hero.mp4&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Hero Intro&quot;},&quot;reel1&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;https://www.instagram.com/reel/DfoPQgxTsTl/&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Instagram Reels&quot;},&quot;reel2&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;https://www.instagram.com/reel/DfWDRAgTEf5/&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Instagram Reels&quot;},&quot;reel3&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;https://www.instagram.com/reel/DeG1iJFzF98/&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Instagram Reels&quot;}}">
+class Component extends DCLogic {
+  state = { dOpen: -1, ready: false, videoMissing: false, slide: 0, area: 0, tone: 0, faq: 0, ba: { c1: 50, c2: 50, c3: 50, c4: 50, c5: 50, c6: 50 } };
+  bars = [React.createRef(), React.createRef(), React.createRef()];
+  areaBar = React.createRef();
+  introRef = React.createRef(); canvasRef = React.createRef(); videoRef = React.createRef();
+  trackRef = React.createRef(); marqARef = React.createRef(); marqBRef = React.createRef();
+  qRef = React.createRef(); aRef = React.createRef();
+  componentDidMount() {
+    import('./directors.js').then(m => this.setState({ D: m.DIRECTORS }));
+    const v = this.videoRef.current;
+    this.loadVideo = src => { const vv = this.videoRef.current; if (!vv) return; fetch(src, { method: 'HEAD' }).then(r => { if (!r.ok) throw 0; vv.src = src; const p = vv.play(); p && p.catch(() => {}); this.setState({ videoMissing: false }); }).catch(() => this.setState({ videoMissing: true })); };
+        if (v) { v.muted = true; v.defaultMuted = true; v.playsInline = true; }
+    const A = this.marqARef.current, B = this.marqBRef.current;
+    if (A && B && !B.childElementCount) [...A.children].forEach(n => B.appendChild(n.cloneNode(true)));
+    this.mx = null; this.hoverM = false; this.t0 = performance.now(); this.a0 = performance.now();
+    const cl = x => Math.max(0, Math.min(1, x));
+    const loop = now => {
+      if (this.state.ready) {
+        const p = cl((now - this.t0) / 6500);
+        this.bars.forEach((r, i) => { if (r.current) r.current.style.transform = `scaleX(${i === this.state.slide ? p : 0})`; });
+        if (p >= 1) this.goSlide((this.state.slide + 1) % 3);
+      }
+      const ap = cl((now - this.a0) / 5000);
+      if (this.areaBar.current) this.areaBar.current.style.transform = `scaleX(${ap})`;
+      if (ap >= 1) this.goArea((this.state.area + 1) % 5);
+      const tr = this.trackRef.current, a = this.marqARef.current;
+      if (tr && a) {
+        if (!this._mw || now - this._mwT > 1000) { this._mw = a.offsetWidth; this._mwT = now; } const half = this._mw;
+        if (this.mx === null) this.mx = -half;
+        if (!this.hoverM) this.mx += 0.45;
+        if (this.mx >= 0) this.mx -= half;
+        tr.style.transform = `translate3d(${this.mx.toFixed(2)}px,0,0)`;
+      }
+      this.raf = requestAnimationFrame(loop);
+    };
+    this.raf = requestAnimationFrame(loop);
+    this.playIntro();
+  }
+  reveal() {
+    window.__tmsIntroDone = true;
+    if (!this.cleanup) import('./motion.js').then(mm => { this.cleanup = mm.initMotion(); });
+    this.t0 = performance.now() + 400; this.a0 = performance.now();
+    this.setState({ ready: true, slide: 0 });
+  }
+  playIntro(force) {
+    this.stopIntro && this.stopIntro();
+    if (!force && window.__tmsIntroDone) {
+      if (this.introRef.current) this.introRef.current.style.display = 'none';
+      this.reveal();
+      return;
+    }
+    this.setState({ ready: false });
+    import('./intro.js').then(m => {
+      this.stopIntro = m.runIntro(this.introRef.current, this.canvasRef.current, this.props.intro ?? 'assemble', { onReveal: () => this.reveal() });
+    });
+  }
+  goSlide(i) { this.t0 = performance.now(); this.setState({ slide: i }); }
+  goArea(i) { this.a0 = performance.now(); if (i !== this.state.area) this.setState({ area: i }); }
+  componentDidUpdate(prev, ps) {
+    if (prev.intro !== this.props.intro) this.playIntro(true);
+    if (prev.heroVideo !== this.props.heroVideo && this.videoRef.current) { this.loadVideo(this.props.heroVideo || 'hero.mp4'); }
+    if (ps.faq !== this.state.faq) {
+      const k = [{ opacity: 0, transform: 'translateY(12px)' }, { opacity: 1, transform: 'none' }];
+      const o = { duration: 500, easing: 'cubic-bezier(.2,.7,.1,1)', fill: 'backwards' };
+      this.qRef.current && this.qRef.current.animate(k, o);
+      this.aRef.current && this.aRef.current.animate(k, { ...o, delay: 380 });
+    }
+  }
+  componentWillUnmount() { this.cleanup && this.cleanup(); this.stopIntro && this.stopIntro(); cancelAnimationFrame(this.raf); }
+  startDrag(id, e) {
+    const frame = e.currentTarget.parentElement;
+    e.preventDefault();
+    const move = ev => {
+      const r = frame.getBoundingClientRect();
+      const p = Math.max(0, Math.min(100, (ev.clientX - r.left) / r.width * 100));
+      this.setState(s => ({ ba: { ...s.ba, [id]: p } }));
+    };
+    const up = () => { window.removeEventListener('pointermove', move); window.removeEventListener('pointerup', up); };
+    window.addEventListener('pointermove', move); window.addEventListener('pointerup', up);
+    move(e);
+  }
+  embed(url) {
+    const m = (url || '').match(/instagram\.com\/(?:[^/]+\/)?(reel|reels|p|tv)\/([^/?#]+)/);
+    if (!m) return null;
+    return `https://www.instagram.com/${m[1] === 'reels' ? 'reel' : m[1]}/${m[2]}/embed`;
+  }
+  renderVals() {
+    const pad = n => String(n).padStart(2, '0');
+    const B = [
+      { l1: '가까이 봐도,', l2: '원래 내 머리처럼', title: '가까이 봐도, 원래 내 머리처럼', body: '채우기 전에 먼저 진단하고,\n모발의 방향과 두피 톤에 맞춰 점 하나의 간격까지 설계합니다.\n원장님들을 가르치는 기준으로 완성하는 자연스러운 밀도.' },
+      { l1: '많이보다,', l2: '자연스럽게', title: '많이보다, 자연스럽게', body: '탈모 부위와 남아 있는 모발, 두피 톤까지 먼저 확인하고\n한 사람에게 맞춘 밀도로 빈 곳을 채웁니다.\n에어닷 SMP 대구경북 교육지사의 기준으로, 가까이서 봐도 티 나지 않게.' },
+      { l1: '점 하나의 차이가', l2: '결과를 바꿉니다', title: '점 하나의 차이가 결과를 바꿉니다', body: '정수리, M자, 헤어라인, 모발이식 흉터까지\n진단부터 디자인, 밀도 설계까지 1:1로 완성하는 SMP.\n원장님들을 가르치는 기술로, 가장 자연스러운 변화를 만듭니다.' },
+    ];
+    const banners = B.map((b, i) => {
+      const on = this.state.ready && i === this.state.slide;
+      return { ...b, no: pad(i + 1), op: on ? 1 : 0, vis: on ? 'visible' : 'hidden', ty: on ? 'translateY(0)' : 'translateY(105%)', ty2: on ? 'translateY(0)' : 'translateY(16px)', tabColor: on ? '#F3F1EC' : '#AAA7A1', barRef: this.bars[i], go: () => this.goSlide(i) };
+    });
+    const AR = [
+      { en: 'CROWN', kr: '정수리', desc: '정수리의 빈 공간', slot: 'home-area-crown' },
+      { en: 'PART', kr: '가르마', desc: '넓어 보이는 가르마', slot: 'home-area-part' },
+      { en: 'HAIRLINE', kr: '헤어라인 · M자', desc: '뒤로 밀려 보이는 헤어라인', slot: 'home-area-hairline' },
+      { en: 'SHAVED', kr: '삭발 디자인', desc: '삭발 스타일의 균일한 인상', slot: 'home-area-shaved' },
+      { en: 'SCAR', kr: '모발이식 흉터', desc: '흉터와 주변 두피의 연결', slot: 'home-area-scar' },
+    ];
+    const ai = this.state.area;
+    const areas = AR.map((a, i) => {
+      const on = i === ai;
+      return { ...a, no: pad(i + 1), ph: a.kr + ' Close-up', op: on ? 1 : 0, sc: on ? 1 : 1.04, pe: on ? 'auto' : 'none', color: on ? '#F3F1EC' : '#4a4a4a', numColor: on ? '#F05A24' : '#4a4a4a', track: on ? '#292929' : 'transparent', barRef: on ? this.areaBar : null, go: () => this.goArea(i) };
+    });
+    const T = [
+      { name: 'DARK', hex: '#0B0B0B → #1A1816', bg: 'linear-gradient(170deg,#1c1a18 0%,#0b0b0b 70%)', dot: '6px 6px', desc: '모발 색이 짙고 대비가 분명한 경우, 기존 모발과 같은 깊이로 맞추는 방향.', match: '짙은 모발 · 대비가 분명한 피부 톤' },
+      { name: 'SOFT', hex: '#2E2A27 → #45403C', bg: 'linear-gradient(170deg,#4a4541 0%,#2b2724 75%)', dot: '9px 9px', desc: '밝은 모발이나 피부 톤에서 경계가 도드라지지 않도록 한 단계 낮춘 방향.', match: '밝은 모발 · 밝은 피부 톤' },
+      { name: 'BLEND', hex: '#141312 → #3A3633', bg: 'linear-gradient(170deg,#3a3633 0%,#1d1b1a 45%,#121110 100%)', dot: '7px 7px', desc: '기존 작업이 있거나 부위별 색 차이가 있을 때, 주변 톤과 섞이도록 조율하는 방향.', match: '기존 SMP · 부위별 색 차이' },
+    ];
+    const tones = T.map((t, i) => {
+      const on = i === this.state.tone;
+      return { ...t, no: pad(i + 1), slot: 'home-tone-' + (i + 1), ph: t.name + ' 톤 Close-up', act: on ? '1' : '0', flex: on ? '4 1 0%' : '1 1 0%', line: on ? '#F05A24' : 'transparent', onOp: on ? 1 : 0, offOp: on ? 0 : 1, delay: on ? '.3s' : '0s', pick: () => { if (this.state.tone !== i) this.setState({ tone: i }); } };
+    });
+    const CR = [
+      ['CROWN', '정수리가 비어 보이는 범위만\n무조건 진하게 채우지 않았습니다.', '정수리 중심부 두피 노출', '남아 있는 모발 위치와 노출 범위', '주변 모발과 연결되는 밀도', '정수리 중심 및 주변 경계'],
+      ['HAIRLINE', '라인을 앞으로 당기기보다\n얼굴에 맞는 선을 먼저 찾았습니다.', 'M자 주변 라인 후퇴', '얼굴 비율과 잔모 방향', '앞쪽은 낮게, 뒤로 갈수록 밀도', '헤어라인 및 M자 주변'],
+      ['PART', '가르마 선만\n진하게 덮지 않았습니다.', '가르마 폭이 넓어 보임', '평소 가르마 방향과 양쪽 밀도', '선 중심의 점진적 밀도', '가르마 라인 주변'],
+      ['SHAVED', '삭발 상태에서\n균일한 인상을 기준으로 잡았습니다.', '부위별 밀도 차이', '두상 형태와 모근 색', '전체 균일한 톤', '두상 전체'],
+      ['SCAR', '흉터만 덮기보다\n주변 두피와 이어지게 맞췄습니다.', '모발이식 흉터 노출', '흉터 폭과 주변 피부 톤', '주변 밀도에 맞춘 연결', '흉터 및 주변 경계'],
+      ['EXISTING', '기존 SMP의 색 차이를\n먼저 맞추는 방향으로 상담했습니다.', '기존 SMP 부위별 색 차이', '남아 있는 색과 퍼짐 정도', '주변 톤에 맞춘 블렌딩', '기존 작업 부위 중심'],
+    ];
+    const cases = CR.map((c, i) => {
+      const id = 'c' + (i + 1), pos = this.state.ba[id];
+      return { no: String(i + 1).padStart(3, '0'), area: c[0], head: c[1], fields: [['시작 상태', c[2]], ['상담 포인트', c[3]], ['디자인 방향', c[4]], ['작업 범위', c[5]]].map(([k, v]) => ({ k, v })), pos, clipR: 100 - pos, beforeSlot: `case-${id}-before`, afterSlot: `case-${id}-after`, beforePh: `${c[0]} BEFORE`, afterPh: `${c[0]} AFTER`, onDown: e => this.startDrag(id, e) };
+    });
+    const reels = [['reel1', '정수리 작업 과정'], ['reel2', '헤어라인 디테일'], ['reel3', '색상 상담 과정']].map(([prop, title], i) => {
+      const DEF = { reel1: 'https://www.instagram.com/reel/DfoPQgxTsTl/', reel2: 'https://www.instagram.com/reel/DfWDRAgTEf5/', reel3: 'https://www.instagram.com/reel/DeG1iJFzF98/' };
+      const url = this.props[prop] || DEF[prop];
+      const embed = this.embed(url);
+      return { no: pad(i + 1), prop, title, has: !!embed, empty: !embed, embed: embed || '', link: url || 'https://www.instagram.com/themo_scalp' };
+    });
+    const FQ = [
+      ['몇 번 진행하나요?', '필요한 범위와 현재 상태에 따라 달라질 수 있어\n상담 후 진행 방향을 안내합니다.'],
+      ['색상은 어떻게 정하나요?', '기존 모발 색과 두피 톤,\n원하는 표현 정도를 함께 확인합니다.'],
+      ['기존 SMP가 있어도 상담할 수 있나요?', '현재 남아 있는 색상과 범위를 먼저 확인한 뒤\n가능한 방향을 상담합니다.'],
+      ['상담 후 바로 진행해야 하나요?', '상담을 통해 범위와 방향을 충분히 확인한 뒤\n결정할 수 있도록 안내합니다.'],
+      ['가격은 얼마인가요?', '범위와 현재 상태에 따라 달라질 수 있어\n사진 또는 방문 상담을 통해 안내합니다.'],
+    ];
+    const fi = this.state.faq;
+    const pad2 = n => String(n).padStart(2, '0');
+    const directors = (this.state.D || []).map((d, i) => {
+      const open = this.state.dOpen === i;
+      const top = d.groups[0][1].slice(0, 4);
+      return { no: pad2(i + 1), name: d.name, role: d.role, imgs: d.img ? [{ src: d.img, alt: d.name + ' ' + d.role, pos: d.pos }] : [], pos: d.pos, alt: d.name + ' ' + d.role, fields: d.fields, top: top.map((t, k) => ({ no: pad2(k + 1), t })), open, groups: d.groups.map(([title, items]) => ({ title, items: title === '주요 경력' ? items.slice(4) : items })).filter(g => g.items.length), btn: open ? '이력 접기' : '전체 이력 보기', sign: open ? '−' : '+', toggle: () => this.setState({ dOpen: open ? -1 : i }) };
+    });
+    return {
+      directors,
+      banners,
+      introRef: this.introRef, canvasRef: this.canvasRef, videoRef: this.videoRef,
+      skipIntro: () => this.stopIntro && this.stopIntro(),
+      videoSrc: this.props.heroVideo || 'hero.mp4', videoMissing: false,
+      areas, areaNo: pad(ai + 1), areaEn: AR[ai].en, areaKr: AR[ai].kr, areaDesc: AR[ai].desc,
+      reels, tones, cases,
+      steps: [['CHECK', '현재 두피와 모발 상태 확인'], ['COLOR', '모발과 피부 톤 확인'], ['DESIGN', '범위와 밀도 설계'], ['WORK', '상태에 맞춰 단계적으로 진행'], ['CHECK', '전체적인 균형 확인']].map(([en, kr], i) => ({ no: pad(i + 1), en, kr })),
+      trackRef: this.trackRef, marqARef: this.marqARef, marqBRef: this.marqBRef,
+      pauseMarquee: () => { this.hoverM = true; }, playMarquee: () => { this.hoverM = false; },
+      faqs: FQ.map(([q, a], i) => ({ no: 'Q' + pad(i + 1), q, a, open: i === fi, color: i === fi ? '#F3F1EC' : '#6e6b66', arrowColor: i === fi ? '#F05A24' : 'transparent', pick: () => this.setState({ faq: i }) })),
+      faqNo: 'Q' + pad(fi + 1), faqQ: FQ[fi][0], faqA: FQ[fi][1], qRef: this.qRef, aRef: this.aRef,
+    };
+  }
+}
+</script>
+</body>
+</html>

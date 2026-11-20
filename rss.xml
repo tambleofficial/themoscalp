@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>THE MO SCALP — 세이지뷰티 더모스칼프</title>
+    <link>https://themoscalp.pages.dev/</link>
+    <description>두피의 컬러 · 밀도 · 경계를 설계하는 SCALP DESIGN STUDIO</description>
+    <language>ko-KR</language>
+    <lastBuildDate>Fri, 20 Nov 2026 08:31:02 GMT</lastBuildDate>
+    <atom:link href="https://themoscalp.pages.dev/rss.xml" rel="self" type="application/rss+xml"/>
+    <image><url>https://themoscalp.pages.dev/favicon.png</url><title>THE MO SCALP</title><link>https://themoscalp.pages.dev/</link></image>
+    <item>
+      <title>THE MO SCALP — 두피 SMP 디자인 스튜디오</title>
+      <link>https://themoscalp.pages.dev/</link>
+      <guid isPermaLink="true">https://themoscalp.pages.dev/</guid>
+      <description>두피 상태와 모발 방향, 피부 톤과 밀도를 함께 살펴 개인별 두피 SMP 디자인을 상담합니다.</description>
+      <pubDate>Fri, 20 Nov 2026 08:31:02 GMT</pubDate>
+    </item>
+    <item>
+      <title>BRAND — 채우는 일이 아니라 연결하는 일</title>
+      <link>https://themoscalp.pages.dev/brand</link>
+      <guid isPermaLink="true">https://themoscalp.pages.dev/brand</guid>
+      <description>THE MO SCALP의 철학, 원장 소개, 수상 및 인증, 디자인을 결정하는 네 가지 기준.</description>
+      <pubDate>Fri, 20 Nov 2026 08:31:02 GMT</pubDate>
+    </item>
+    <item>
+      <title>SMP — 부위별 두피 디자인</title>
+      <link>https://themoscalp.pages.dev/smp</link>
+      <guid isPermaLink="true">https://themoscalp.pages.dev/smp</guid>
+      <description>정수리 · 가르마 · 헤어라인 · 삭발 · 기존 SMP 상담과 색상 설계.</description>
+      <pubDate>Fri, 20 Nov 2026 08:31:02 GMT</pubDate>
+    </item>
+    <item>
+      <title>CASE — 실제 작업 사례</title>
+      <link>https://themoscalp.pages.dev/case</link>
+      <guid isPermaLink="true">https://themoscalp.pages.dev/case</guid>
+      <description>시작 상태, 상담 포인트, 디자인 방향, 작업 범위를 같은 비율로 기록한 작업 아카이브.</description>
+      <pubDate>Fri, 20 Nov 2026 08:31:02 GMT</pubDate>
+    </item>
+    <item>
+      <title>PROCESS — 상담부터 마지막 확인까지</title>
+      <link>https://themoscalp.pages.dev/process</link>
+      <guid isPermaLink="true">https://themoscalp.pages.dev/process</guid>
+      <description>상담 · 컬러 체크 · 디자인 · 작업 · 마지막 확인, 작업 후 안내와 후기.</description>
+      <pubDate>Fri, 20 Nov 2026 08:31:02 GMT</pubDate>
+    </item>
+    <item>
+      <title>EDUCATION — 1:1 SMP 교육</title>
+      <link>https://themoscalp.pages.dev/education</link>
+      <guid isPermaLink="true">https://themoscalp.pages.dev/education</guid>
+      <description>에어닷 SMP 대구경북 교육지사의 1:1 교육. 색상 상담, 밀도 설계, 실습.</description>
+      <pubDate>Fri, 20 Nov 2026 08:31:02 GMT</pubDate>
+    </item>
+    <item>
+      <title>CONTACT — 상담 안내</title>
+      <link>https://themoscalp.pages.dev/contact</link>
+      <guid isPermaLink="true">https://themoscalp.pages.dev/contact</guid>
+      <description>카카오톡 사진 상담, 네이버 플레이스, 인스타그램.</description>
+      <pubDate>Fri, 20 Nov 2026 08:31:02 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
